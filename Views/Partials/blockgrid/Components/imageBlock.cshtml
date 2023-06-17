@@ -1,0 +1,11 @@
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlockGridItem<ImageBlock>>
+@{
+    var image = Model.Content.Image;
+    if (image is null)
+    {
+        return;
+    }
+}
+
+<grid-image src="@image.Url()"></grid-image>

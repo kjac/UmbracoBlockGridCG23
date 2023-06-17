@@ -1,0 +1,7 @@
+<grid-section
+        style="cursor:pointer"
+        ng-click="block.edit()"
+        background-color="{{block.data.backgroundColor.value}}"
+        text-contrast="{{block.data.textContrast}}">
+    <umb-block-grid-render-area-slots ng-click="$event.stopPropagation()"></umb-block-grid-render-area-slots>
+</grid-section>

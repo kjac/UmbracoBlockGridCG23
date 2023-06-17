@@ -1,0 +1,7 @@
+<grid-hero
+        style="cursor:pointer"
+        ng-click="block.edit()"
+        headline="{{block.data.headline}}"
+        background-image="{{(block.data.backgroundImage[0].mediaKey | mediaItemResolver).mediaLink}}">
+    <umb-block-grid-render-area-slots ng-click="$event.stopPropagation()"></umb-block-grid-render-area-slots>
+</grid-hero>

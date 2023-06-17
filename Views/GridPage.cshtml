@@ -1,0 +1,23 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.GridPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = null;
+}
+<html lang="en">
+<head>
+    <title>CG23 - Umbraco Block Grid</title>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <script type="module" src="/js/modules/hero.js"></script>
+    <script type="module" src="/js/modules/text.js"></script>
+    <script type="module" src="/js/modules/quote.js"></script>
+    <script type="module" src="/js/modules/call-to-action.js"></script>
+    <script type="module" src="/js/modules/card.js"></script>
+    <script type="module" src="/js/modules/headline.js"></script>
+    <script type="module" src="/js/modules/image.js"></script>
+    <script type="module" src="/js/modules/section.js"></script>
+</head>
+<body>
+@await Html.GetBlockGridHtmlAsync(Model.Grid)
+</body>
+</html>

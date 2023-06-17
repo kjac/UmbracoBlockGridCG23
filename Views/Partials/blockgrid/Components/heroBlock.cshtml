@@ -1,0 +1,15 @@
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlockGridItem<HeroBlock>>
+@{
+    var image = Model.Content.BackgroundImage;
+    if (image == null)
+    {
+        return;
+    }
+}
+
+<grid-hero
+  headline="@Model.Content.Headline"
+  background-image="@image.Url()">
+  @await Html.GetBlockGridItemAreasHtmlAsync(Model)
+</grid-hero>

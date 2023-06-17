@@ -1,0 +1,14 @@
+{
+    "name": "My Text Contrast Picker",
+    "version": "1.0.0",
+    "propertyEditors": [{
+            "alias": "My.TextContrastPicker",
+            "name": "Text Contrast Picker",
+            "editor": {
+                "view": "~/App_Plugins/My.TextContrastPicker/my.textcontrastpicker.html",
+                "hideLabel": false,
+                "valueType": "STRING"
+            }
+        }
+    ]
+}

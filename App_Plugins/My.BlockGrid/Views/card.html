@@ -1,0 +1,8 @@
+<grid-card
+        style="cursor:pointer"
+        ng-click="block.edit()"
+        image-src="{{(block.data.image[0].mediaKey | mediaItemResolver).mediaLink}}"
+        headline="{{block.data.headline}}"
+        text="{{block.data.text}}"
+        column-span={{block.layout.columnSpan}}>
+</grid-card>

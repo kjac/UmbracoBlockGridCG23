@@ -1,0 +1,11 @@
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlockGridItem<CardBlock>>
+@{
+    var image = Model.Content.Image;
+    if (image is null)
+    {
+        return;
+    }
+}
+
+<grid-card image-src="@image.Url()" headline="@Model.Content.Headline" text="@Model.Content.Text" column-span="@Model.ColumnSpan"></grid-card>

@@ -1,0 +1,8 @@
+<!-- need a wrapper here to prevent the CTA link from capturing pointer events -->
+<div style="cursor:pointer" ng-click="block.edit()">
+    <grid-call-to-action
+            label="{{block.data.label}}"
+            link=""
+            style="pointer-events:none;">
+    </grid-call-to-action>
+</div>

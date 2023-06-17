@@ -1,0 +1,11 @@
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlockGridItem<CallToActionBlock>>
+@{
+    var link = Model.Content.Link;
+    if (link is null)
+    {
+        return;
+    }
+}
+
+<grid-call-to-action label="@Model.Content.Label" link="@link.Url()"></grid-call-to-action>

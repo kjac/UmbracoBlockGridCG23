@@ -1,0 +1,49 @@
+<style>
+.text-contrast-picker-item {
+  border: 2px solid white;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: all .15s ease-in-out;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.text-contrast-picker-item {
+  border: 1px solid #e9e9eb;
+}
+
+.text-contrast-picker-item:hover {
+  border: 1px dashed #2152a3;
+}
+
+.text-contrast-picker-item.-selected {
+  border: 1px solid #2152a3 !important;
+}
+
+.text-contrast-picker-item--black {
+  background-color: black;
+  border: 7px solid black;
+  display: flex;
+  border-radius: 3px;
+  color: white !important;
+}
+</style>
+<div>
+  <span class="text-contrast-picker-item"
+      ng-class="{'-selected': 'default' === model.value}"
+      ng-click="model.value = 'default'">
+	<umb-icon icon="icon-font color-black" class="icon"></umb-icon>
+  </span>
+  <span class="text-contrast-picker-item"
+      ng-class="{'-selected': 'inverted' === model.value}"
+      ng-click="model.value = 'inverted'">
+	<span class="text-contrast-picker-item--black">
+	  <umb-icon icon="icon-font" class="icon"></umb-icon>
+	</span>
+  </span>
+</div>
