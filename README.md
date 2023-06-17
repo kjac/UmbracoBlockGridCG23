@@ -1,6 +1,8 @@
-# UmbracoBlockGridCG23
+# Umbraco Block Grid CG23 demo site
 
 This repo contains the demo site from my Umbraco Block Grid talk at CodeGarden in June 2023.
+
+<img width="1306" alt="image" src="https://github.com/kjac/UmbracoBlockGridCG23/assets/7405322/b1a67c0c-3703-4fb0-af2c-d8e69dab8cd9">
 
 The site is built on Umbraco 11.4, which means you need .NET 7 to run it.
 
